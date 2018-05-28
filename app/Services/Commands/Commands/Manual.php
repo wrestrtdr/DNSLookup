@@ -18,7 +18,7 @@ class Manual implements Command
             'Enter a domain name to retrieve all DNS records.',
             "Enter 'ip' to check your own address.",
             "Enter 'clear' to wipe the screen.",
-            "Enter 'doom' to play Doom.",
+            "Enter 'doom' to play Doom :)",
             "Drag this bookmarklet to your toolbar to <a class=\"bookmarklet\" href=\"javascript:location.href='http://dns.arash-hatami.ir/'+location.hostname;\">lookup DNS records</a> for sites you're visiting."
         ])->implode('<br>');
 
