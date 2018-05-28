@@ -19,7 +19,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#151d21">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#151d21">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#151d21">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#151d21">
 </head>
 
 <body class="layout">
