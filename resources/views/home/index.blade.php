@@ -5,7 +5,7 @@
 <header class="header">
     <h1 class="title">
         <span class="carret">~</span>
-        dnsrecords.io
+        arash-hatami.ir
     </h1>
 </header>
 <main class="main">
@@ -39,7 +39,7 @@
 </main>
 
 <footer class="footer">
-    © <a href='https://spatie.be/en/opensource'>spatie</a> {{ date('Y') }} — type '<kbd>help</kbd>'
+    © <a href='http://arash-hatami.ir'>A.Hatami</a> {{ date('Y') }} — type '<kbd>help</kbd>'
 </footer>
 
 @endsection
