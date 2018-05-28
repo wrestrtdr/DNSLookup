@@ -1,0 +1,201 @@
+a {
+    text-decoration: none;
+}
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+h1 {
+    font-size: 16px;
+    font-size: 1rem;
+}
+.h1__prefix {
+    display: inline-block;
+    width: 16px;
+    width: 1rem;
+}
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Fira Mono', monospace;
+    line-height: 2;
+
+    /* 16px up to 1066, then grow */
+
+}
+@media (min-width: 1066px) {
+    html {
+        font-size: 1.5vw;
+    }
+}
+input {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border: none;
+    background-color: transparent;
+    color: #6dc53c;
+    -webkit-transition: color .1s .5s ease;
+    transition: color .1s .5s ease
+}
+input:focus {
+    outline: none;
+    color: inherit;
+    -webkit-transition: none;
+    transition: none;
+}
+::-webkit-input-placeholder {
+    color: rgba(205, 207, 203, 0.5);
+}
+::-moz-placeholder {
+    color: rgba(205, 207, 203, 0.5);
+}
+:-ms-input-placeholder {
+    color: rgba(205, 207, 203, 0.5);
+}
+:-moz-placeholder {
+    color: rgba(205, 207, 203, 0.5);
+}
+::-moz-selection {
+    background-color: #007593;
+}
+::selection {
+    background-color: #007593;
+}
+::-moz-selection {
+    background-color: #007593;
+}
+* {
+    position: relative;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit
+}
+*:after,
+    *:before {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+/* From reboot.css: speed up any delay that might exist for touch users */
+a,
+button,
+input:not([type=range]),
+label,
+select,
+textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+.alert--info {
+    color: #d9d771;
+}
+.alert--danger {
+    display: inline-block;
+    padding: 0 8px;
+    padding: 0 .5rem;
+    background: #8c251d;
+}
+.bookmarklet {
+    padding: 0 8px;
+    padding: 0 .5rem;
+    border-radius: 9999px;
+    background: rgba(205, 207, 203, 0.35);
+    color: #151d21;
+    white-space: nowrap;
+}
+.carret {
+    position: absolute;
+    left: -24px;
+    left: -1.5rem;
+    display: block;
+    width: 16px;
+    width: 1rem;
+    color: #007593
+}
+.carret.-green {
+    color: #6dc53c;
+}
+.footer {
+    padding: 64px 0 8px;
+    padding: 4rem 0 .5rem;
+    color: rgba(205, 207, 203, 0.25);
+    font-size: 12px;
+    font-size: .75rem;
+}
+header {
+    padding-top: 32px;
+    padding-top: 2rem;
+}
+.layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 8vw;
+    min-height: 100%;
+    background-color: #151d21;
+    color: #cdcfcb
+
+    /* Fade out overflow content on the right */
+}
+.layout:after {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8vw;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(21, 29, 33, 0)), to(#151d21));
+    background-image: linear-gradient(to right, rgba(21, 29, 33, 0), #151d21);
+    content: '';
+}
+.layout.-error {
+    background-color: #00F;
+}
+.layout.-error:after {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 255, 0)), to(#00F));
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0), #00F);
+}
+.main {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.main__results {
+    /* Give the pre a width and some room to scroll horizontally */
+    display: inline-block;
+    padding-right: 8vw;
+}
+.title {
+    font-weight: 700
+}
+.title.-error {
+    display: inline-block;
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    padding: 0 8px;
+    padding: 0 .5rem;
+    background-color: #cdcfcb;
+    color: #00F;
+}
+.text-break {
+    display: inline-block;
+    word-break: break-all;
+}
